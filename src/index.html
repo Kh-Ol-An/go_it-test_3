@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pixabay mod_13 hw js</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="search-form" id="search-form">
+      <!-- input -->
+      <div class="search">
+        <input class="input" type="text" name="query" autocomplete="off" />
+        <svg viewBox="0 0 700 100" class="magnifying-glass">
+          <path
+            class="magnifying-glass-path"
+            d="m 59.123035,59.123035 c -10.561361,10.56136 -27.684709,10.56136 -38.24607,0 -10.56136,-10.561361 -10.56136,-27.684709 0,-38.24607 10.561361,-10.56136 27.684709,-10.56136 38.24607,0 10.56136,10.561361 10.56136,27.684709 0,38.24607 l 28.876965,28.876965 c 6.304625,7.101523 5.754679,-0.187815 13.07143,-0.5 h 582.04101"
+          />
+          <path
+            class="x"
+            d="m 673.46803,25.714286 -37.17876,38.816532 c 0,0 -5.08857,5.60515 -5.68529,11.841734 -1.06622,11.143538 13.02902,11.127448 13.02902,11.127448"
+          />
+          <path
+            class="x"
+            d="m 635.08021,25.714286 37.17876,38.816532 c 0,0 5.08857,5.60515 5.68529,11.841734 1.06622,11.143538 -13.02902,11.127448 -13.02902,11.127448"
+          />
+        </svg>
+        <div class="overlay overlay-1"></div>
+        <div class="overlay overlay-2"></div>
+      </div>
+
+      <!-- button search -->
+      <div class="container">
+        <button class="learn-more" type="submit">
+          <div class="circle">
+            <span class="icon arrow"></span>
+          </div>
+          <p class="button-text">Search</p>
+        </button>
+      </div>
+    </form>
+
+    <!-- list images -->
+    <ul class="gallery" id="gallery"></ul>
+
+    <!-- button load more -->
+    <div class="container is-hidden" id="load_more">
+      <button class="learn-more" type="submit">
+        <div class="circle">
+          <span class="icon arrow"></span>
+        </div>
+        <p class="button-text">Load more</p>
+      </button>
+    </div>
+
+    <!-- button scrollTo(up) -->
+    <div class="is-hidden" id="scroll_up">
+      <div id="div_scroll_up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path
+            d="M22.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- spinner -->
+    <div class="spinner_overlay is-hidden" id="spinner">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -9"
+              result="goo"
+            />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="stopwatch large"></div>
+    </div>
+  </body>
+</html>

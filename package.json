@@ -1,0 +1,47 @@
+{
+  "name": "modul_12",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --env.mode development",
+    "build": "webpack --env.mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepages": "https://kholega.github.io/goit-js-hw/",
+  "keywords": [],
+  "author": "Oleg Khristenko <olegkhristenko@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "basiclightbox": "^5.0.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "gh-pages": "^2.0.1",
+    "handlebars-loader": "^1.7.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pnotify": "^4.0.0",
+    "postcss-loader": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "webpackbar": "^3.2.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.1.2"
+  },
+  "description": ""
+}
